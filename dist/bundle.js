@@ -18,19 +18,19 @@ var Starfield = function() {
     var camera,
         scene,
         renderer,
-        particles = [],
+        particles,
         width = window.innerWidth,
         height = window.innerHeight;
 
     this.init = function() {
 
-        camera = new THREE.PerspectiveCamera(80, width / height, 1, 4000 );
+        camera = new THREE.PerspectiveCamera(75, width / height, 1, 3000 );
         camera.position.z = 1000;
 
         scene = new THREE.Scene();
         scene.add(camera);
 
-        renderer = new THREE.CanvasRenderer();
+        renderer = new THREE.WebGLRenderer();
         renderer.setSize( width, height );
 
         document.body.appendChild( renderer.domElement );
@@ -57,18 +57,15 @@ var Starfield = function() {
      */
     function makeParticles() {
 
-        var particles,
-            material,
-            geometry;
-
-        geometry = new THREE.Geometry();
+        var material,
+            geometry = new THREE.Geometry();
 
         for( var i = 0; i < 20000; i ++ ) {
 
             var vertex = new THREE.Vector3();
             vertex.x = Math.random() * 2000 - 1000;
             vertex.y = Math.random() * 2000 - 1000;
-            vertex.z = Math.random() * 2000 - 1000;
+            vertex.z = Math.random() * -2000 + 1000;
 
             geometry.vertices.push( vertex );
 

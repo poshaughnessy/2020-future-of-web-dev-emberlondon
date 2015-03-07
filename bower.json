@@ -1,0 +1,17 @@
+{
+  "name": "2020-future-of-web-dev-emberlondon",
+  "version": "0.0.0",
+  "homepage": "https://github.com/poshaughnessy/2020-future-of-web-dev-emberlondon",
+  "authors": [
+    "Peter O'Shaughnessy, peter.oshaughnessy@gmail.com"
+  ],
+  "description": "A presentation I'm giving to the Ember London meetup, March 2015",
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "bower_components"
+  ],
+  "dependencies": {
+    "threejs": "*"
+  }
+}

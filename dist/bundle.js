@@ -1642,7 +1642,7 @@ var Starfield = function() {
         scene,
         renderer,
         particles,
-        starTexture = THREE.ImageUtils.loadTexture('../images/star.png'),
+        starTexture = THREE.ImageUtils.loadTexture('../images/star-round.png'),
         width = window.innerWidth,
         height = window.innerHeight;
 
@@ -1706,7 +1706,13 @@ var Starfield = function() {
 
         }
 
-        material = new THREE.PointCloudMaterial( { size: 4, color: 0xffffff, map: starTexture, transparent: true } );
+        material = new THREE.PointCloudMaterial({
+            size: 4,
+            color: 0xffffff,
+            map: starTexture,
+            transparent: true,
+            opacity: 0.9
+        } );
 
         //material.map.repeat.set( 1, 1, 1 );
         material.map.wrapS = material.map.wrapT = THREE.RepeatWrapping;

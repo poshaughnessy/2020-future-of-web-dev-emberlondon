@@ -10,7 +10,8 @@ console.log('THREE', THREE);
 
 var Starfield = function() {
 
-    var camera,
+    var CAMERA_Z_RANGE = 100,
+        camera,
         scene,
         renderer,
         particles,
@@ -22,7 +23,7 @@ var Starfield = function() {
     this.init = function() {
 
         camera = new THREE.PerspectiveCamera(75, width / height, 1, 5000 );
-        camera.position.z = 1000;
+        camera.position.z = 0;
 
         scene = new THREE.Scene();
         scene.add(camera);
@@ -38,6 +39,22 @@ var Starfield = function() {
 
     };
 
+    this.moveCameraZ = function(delta) {
+
+        var newZ = (-delta * CAMERA_Z_RANGE);
+
+        console.log('Change camera z to', delta, newZ);
+
+        new TWEEN.Tween( camera.position )
+            .to( { z: newZ }, 1000 )
+            .easing( TWEEN.Easing.Quadratic.InOut )
+            .start();
+
+//        camera.position.z -= amount;
+
+    };
+
+    /*
     this.moveCameraZ = function(amount) {
 
         new TWEEN.Tween( camera.position )
@@ -48,6 +65,7 @@ var Starfield = function() {
 //        camera.position.z -= amount;
 
     };
+    */
 
     function animate(time) {
 

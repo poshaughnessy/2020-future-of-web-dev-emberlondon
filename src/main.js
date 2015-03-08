@@ -26,43 +26,38 @@ document.addEventListener('impress:stepleave', function(e) {
 });
 */
 
-function onPrevSlide() {
+function onSlideChange() {
 
-    if( !isFirstSlide() ) {
-        moveStarFieldBackwards();
-    } else {
-        moveStarFieldForwards();
-    }
+    var newSlideIndex = getSlideIndex( getCurrentSlide() );
 
-}
+    console.log('slide changed to', newSlideIndex);
 
-
-function onNextSlide() {
-
-    if( !isLastSlide() ) {
-        moveStarFieldForwards();
-    } else {
-        moveStarFieldBackwards();
-    }
+    moveStarField( newSlideIndex / numberOfSlides );
 
 }
 
+function moveStarField( delta ) {
 
-function moveStarFieldBackwards() {
+    console.log( 'move star field', delta );
+
+    starfield.moveCameraZ( delta );
+}
+
+/*
+function moveStarFieldForwards() {
     starfield.moveCameraZ( -STAR_FIELD_MOVE_AMOUNT );
 }
 
-function moveStarFieldForwards() {
-    starfield.moveCameraZ( STAR_FIELD_MOVE_AMOUNT );
-}
-
 function isFirstSlide() {
+    console.log('is first slide?', getCurrentSlide(), getSlideIndex(getCurrentSlide()));
     return getSlideIndex(getCurrentSlide()) === 0;
 }
 
 function isLastSlide() {
-    return getSlideIndex(getCurrentSlide()) === numberOfSlides - 1;
+    console.log('is last slide?', getCurrentSlide(), getSlideIndex(getCurrentSlide()), numberOfSlides);
+    return getSlideIndex(getCurrentSlide()) === numberOfSlides;
 }
+*/
 
 function getCurrentSlide() {
     return document.getElementById('impress').querySelector('.active');
@@ -81,14 +76,14 @@ document.addEventListener("keyup", function ( event ) {
             case 33: // pg up
             case 37: // left
             case 38: // up
-                onPrevSlide();
+                onSlideChange();
                 break;
             case 9:  // tab
             case 32: // space
             case 34: // pg down
             case 39: // right
             case 40: // down
-                onNextSlide();
+                onSlideChange();
                 break;
         }
 

@@ -27,43 +27,38 @@ document.addEventListener('impress:stepleave', function(e) {
 });
 */
 
-function onPrevSlide() {
+function onSlideChange() {
 
-    if( !isFirstSlide() ) {
-        moveStarFieldBackwards();
-    } else {
-        moveStarFieldForwards();
-    }
+    var newSlideIndex = getSlideIndex( getCurrentSlide() );
 
-}
+    console.log('slide changed to', newSlideIndex);
 
-
-function onNextSlide() {
-
-    if( !isLastSlide() ) {
-        moveStarFieldForwards();
-    } else {
-        moveStarFieldBackwards();
-    }
+    moveStarField( newSlideIndex / numberOfSlides );
 
 }
 
+function moveStarField( delta ) {
 
-function moveStarFieldBackwards() {
+    console.log( 'move star field', delta );
+
+    starfield.moveCameraZ( delta );
+}
+
+/*
+function moveStarFieldForwards() {
     starfield.moveCameraZ( -STAR_FIELD_MOVE_AMOUNT );
 }
 
-function moveStarFieldForwards() {
-    starfield.moveCameraZ( STAR_FIELD_MOVE_AMOUNT );
-}
-
 function isFirstSlide() {
+    console.log('is first slide?', getCurrentSlide(), getSlideIndex(getCurrentSlide()));
     return getSlideIndex(getCurrentSlide()) === 0;
 }
 
 function isLastSlide() {
-    return getSlideIndex(getCurrentSlide()) === numberOfSlides - 1;
+    console.log('is last slide?', getCurrentSlide(), getSlideIndex(getCurrentSlide()), numberOfSlides);
+    return getSlideIndex(getCurrentSlide()) === numberOfSlides;
 }
+*/
 
 function getCurrentSlide() {
     return document.getElementById('impress').querySelector('.active');
@@ -82,14 +77,14 @@ document.addEventListener("keyup", function ( event ) {
             case 33: // pg up
             case 37: // left
             case 38: // up
-                onPrevSlide();
+                onSlideChange();
                 break;
             case 9:  // tab
             case 32: // space
             case 34: // pg down
             case 39: // right
             case 40: // down
-                onNextSlide();
+                onSlideChange();
                 break;
         }
 
@@ -1678,7 +1673,8 @@ console.log('THREE', THREE);
 
 var Starfield = function() {
 
-    var camera,
+    var CAMERA_Z_RANGE = 100,
+        camera,
         scene,
         renderer,
         particles,
@@ -1690,7 +1686,7 @@ var Starfield = function() {
     this.init = function() {
 
         camera = new THREE.PerspectiveCamera(75, width / height, 1, 5000 );
-        camera.position.z = 1000;
+        camera.position.z = 0;
 
         scene = new THREE.Scene();
         scene.add(camera);
@@ -1706,6 +1702,22 @@ var Starfield = function() {
 
     };
 
+    this.moveCameraZ = function(delta) {
+
+        var newZ = (-delta * CAMERA_Z_RANGE);
+
+        console.log('Change camera z to', delta, newZ);
+
+        new TWEEN.Tween( camera.position )
+            .to( { z: newZ }, 1000 )
+            .easing( TWEEN.Easing.Quadratic.InOut )
+            .start();
+
+//        camera.position.z -= amount;
+
+    };
+
+    /*
     this.moveCameraZ = function(amount) {
 
         new TWEEN.Tween( camera.position )
@@ -1716,6 +1728,7 @@ var Starfield = function() {
 //        camera.position.z -= amount;
 
     };
+    */
 
     function animate(time) {
 

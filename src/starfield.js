@@ -78,7 +78,7 @@ var Starfield = function() {
 
         }
 
-        material = new THREE.PointCloudMaterial( { size: 5, color: 0xffffff, map: starTexture, transparent: true } );
+        material = new THREE.PointCloudMaterial( { size: 4, color: 0xffffff, map: starTexture, transparent: true } );
 
         //material.map.repeat.set( 1, 1, 1 );
         material.map.wrapS = material.map.wrapT = THREE.RepeatWrapping;

@@ -14,7 +14,8 @@
   },
   "homepage": "https://github.com/poshaughnessy/2020-future-of-web-dev-emberlondon",
   "browser": {
-    "three": "bower_components/threejs/build/three.js"
+    "three": "bower_components/threejs/build/three.js",
+    "impress": "./bower_components/impress.js/js/impress.js"
   },
   "browserify-shim": "browserify-shim-config.js",
   "browserify": {

@@ -54,7 +54,7 @@ gulp.task('browserify-watch', function () {
 });
 
 gulp.task('watch', ['browserify-watch'], function() {
-    gulp.watch('./styles/main.scss', ['sass']);
+    gulp.watch('./styles/*.scss', ['sass']);
 });
 
 gulp.task('server', ['copy-fonts','sass','watch'], function() {

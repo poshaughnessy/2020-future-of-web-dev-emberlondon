@@ -1,8 +1,9 @@
 @import 'fonts';
 @import 'impress';
 
-$text-colour: #5c88b7; //#8dc8d9;
-$text-shadow-colour: rgba(78, 108, 183, 0.8);
+$text-colour-main: #5c88b7; //#8dc8d9;
+$text-colour-main-shadow: rgb(78, 108, 183);
+$text-colour-alt: #ddd551;
 
 body {
   background-color: #000000;
@@ -10,8 +11,12 @@ body {
   text-align: center;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 30px;
-  color: $text-colour;
-  text-shadow: 1px 1px 2px $text-shadow-colour;
+  color: $text-colour-main;
+}
+
+.alt-style {
+  color: $text-colour-alt;
+  text-shadow: none;
 }
 
 h1 {
@@ -28,7 +33,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 img {
@@ -45,14 +50,14 @@ img {
 
 a {
   text-decoration: none;
-  text-shadow: 1px 1px 2px darken($text-shadow-colour, 0.2);
+  text-shadow: 1px 1px 2px darken($text-colour-main-shadow, 0.2);
 }
 
 a:hover {
-  text-shadow: 1px 1px 2px lighten($text-shadow-colour, 0.5);
+  text-shadow: 1px 1px 2px lighten($text-colour-main-shadow, 0.5);
 }
 
-.centre-contents {
+.vertical-centre {
   position: absolute;
   height: auto;
   top: 50%;

@@ -115,11 +115,22 @@ body {
 
 .slide {
   display: block;
-
   width: 900px;
   height: 700px;
-
   padding: 40px 60px;
+}
+
+.fragment {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.fragment.show {
+  opacity: 1;
 }
 
 /*

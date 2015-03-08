@@ -2,30 +2,38 @@
 var starfield = require('./starfield'),
     impress = require('impress');
 
+var impressRoot = document.getElementById('impress'),
+    slideElements = impressRoot.querySelectorAll('.slide'),
+    numberOfSlides = slideElements.length;
+
+impressRoot.addEventListener('impress:stepleave', function(event) {
+
+    /*
+    console.log('event', event);
+
+    var hiddenFragments = event.target.querySelectorAll('.fragment:not(.show)');
+
+    console.log('hiddenFragments', hiddenFragments);
+
+    if( hiddenFragments.length > 0 ) {
+        hiddenFragments[0].classList.add('show');
+
+        console.log('trying to stop slide from changing');
+
+        event.preventDefault();
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+    }
+    */
+
+    onSlideChange();
+
+});
+
 impress().init();
 
 starfield.init();
 
-var STAR_FIELD_MOVE_AMOUNT = 10;
-    slideElements = document.getElementById('impress').querySelectorAll('.slide'),
-    numberOfSlides = slideElements.length;
-
-/*
-document.addEventListener('impress:stepleave', function(e) {
-
-    console.log('step leave', e);
-
-    var currentSlide = e.target;
-
-    console.log('child nodes', slideElements);
-    console.log('current slide', currentSlide);
-
-    var currentSlideNumber = Array.prototype.indexOf.call(slideElements, currentSlide);
-
-    console.log('current slide number', currentSlideNumber);
-
-});
-*/
 
 function onSlideChange() {
 
@@ -71,6 +79,7 @@ function getSlideIndex(slide) {
 /**
  * TODO also handle touch control, hash change etc!
  */
+/*
 document.addEventListener("keyup", function ( event ) {
     if ( event.keyCode === 9 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) ) {
         switch( event.keyCode ) {
@@ -91,7 +100,7 @@ document.addEventListener("keyup", function ( event ) {
         event.preventDefault();
     }
 }, false);
-
+*/
 
 },{"./starfield":"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/src/starfield.js","impress":"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/bower_components/impress.js/js/impress.js"}],"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/bower_components/impress.js/js/impress.js":[function(require,module,exports){
 (function (global){
@@ -1764,11 +1773,8 @@ var Starfield = function() {
             color: 0xffffff,
             map: starTexture,
             transparent: true,
-            opacity: 0.9
+            opacity: 0.5
         } );
-
-        //material.map.repeat.set( 1, 1, 1 );
-        material.map.wrapS = material.map.wrapT = THREE.RepeatWrapping;
 
         particles = new THREE.PointCloud( geometry, material );
 

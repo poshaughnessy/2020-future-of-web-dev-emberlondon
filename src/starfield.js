@@ -101,11 +101,8 @@ var Starfield = function() {
             color: 0xffffff,
             map: starTexture,
             transparent: true,
-            opacity: 0.9
+            opacity: 0.5
         } );
-
-        //material.map.repeat.set( 1, 1, 1 );
-        material.map.wrapS = material.map.wrapT = THREE.RepeatWrapping;
 
         particles = new THREE.PointCloud( geometry, material );
 

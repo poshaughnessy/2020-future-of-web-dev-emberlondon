@@ -118,25 +118,3 @@ body {
   height: 700px;
   padding: 40px 60px;
 }
-
-.fragment {
-  opacity: 0;
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -ms-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
-}
-
-.fragment.show {
-  opacity: 1;
-}
-
-/*
- * Slide specific styles
- */
-#title-slide {
-  h1 {
-    margin-top: 100px;
-  }
-}

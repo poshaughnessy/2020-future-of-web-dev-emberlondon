@@ -38,7 +38,7 @@ h4 {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 30px;
 }
 
 p, ul, ol {
@@ -79,4 +79,17 @@ a {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+
+/*
+ * Slide specific styles
+ */
+#title-slide {
+  h1 {
+    margin: 100px 0 0 0;
+  }
+  h2 {
+    margin: 0;
+  }
 }

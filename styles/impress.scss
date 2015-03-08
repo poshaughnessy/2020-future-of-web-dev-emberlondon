@@ -20,84 +20,93 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
+  display: block;
 }
+
 body {
-    line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-    list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-    quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
 /* End of CSS reset */
 
-
 body {
-    font-family: 'PT Sans', sans-serif;
-    
-    min-height: 740px;
+  font-family: 'PT Sans', sans-serif;
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+  min-height: 740px;
 
-    -webkit-font-smoothing: antialiased;
+  background: rgb(215, 215, 215);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+  background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+  background: -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+  background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+  background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+
+  -webkit-font-smoothing: antialiased;
 }
 
 /* enable clicking on elements 'hiding' behind body in 3D */
-body     { pointer-events: none; }
-#impress { pointer-events: auto; }
+body {
+  pointer-events: none;
+}
+
+#impress {
+  pointer-events: auto;
+}
 
 /* COMMON STEP STYLES */
 
 .step {
-    width: 900px;
-    padding: 40px;
+  width: 900px;
+  padding: 40px;
 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    -ms-box-sizing:     border-box;
-    -o-box-sizing:      border-box;
-    box-sizing:         border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .step {
-    -webkit-transition: opacity 1s;
-    -moz-transition:    opacity 1s;
-    -ms-transition:     opacity 1s;
-    -o-transition:      opacity 1s;
-    transition:         opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 /* fade out inactive slides */
 .step:not(.active) {
-    opacity: 0;
+  opacity: 0;
 }
 
 /*
@@ -105,12 +114,12 @@ body     { pointer-events: none; }
  */
 
 .slide {
-    display: block;
+  display: block;
 
-    width: 900px;
-    height: 700px;
+  width: 900px;
+  height: 700px;
 
-    padding: 40px 60px;
+  padding: 40px 60px;
 }
 
 /*

@@ -94,9 +94,7 @@ body {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-}
 
-.step {
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -ms-transition: opacity 1s;
@@ -107,6 +105,7 @@ body {
 /* fade out inactive slides */
 .step:not(.active) {
   opacity: 0;
+  pointer-events: none;
 }
 
 /*

@@ -5,7 +5,10 @@ var impressRoot = document.getElementById('impress'),
     slideElements = impressRoot.querySelectorAll('.slide'),
     numberOfSlides = slideElements.length;
 
-impressRoot.addEventListener('impress:stepleave', function(event) {
+impress().init();
+starfield.init();
+
+document.addEventListener('impress:stepleave', function(event) {
 
     /*
     console.log('event', event);
@@ -28,11 +31,6 @@ impressRoot.addEventListener('impress:stepleave', function(event) {
     onSlideChange();
 
 });
-
-impress().init();
-
-starfield.init();
-
 
 function onSlideChange() {
 

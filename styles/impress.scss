@@ -156,3 +156,8 @@ body     { pointer-events: none; }
 /*
  * Slide specific styles
  */
+#title-slide {
+  h1 {
+    margin-top: 100px;
+  }
+}

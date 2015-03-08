@@ -5,7 +5,9 @@ impress().init();
 
 starfield.init();
 
-var slideElements = document.getElementById('impress').querySelectorAll('.slide');
+var STAR_FIELD_MOVE_AMOUNT = 10;
+    slideElements = document.getElementById('impress').querySelectorAll('.slide'),
+    numberOfSlides = slideElements.length;
 
 /*
 document.addEventListener('impress:stepleave', function(e) {
@@ -25,15 +27,53 @@ document.addEventListener('impress:stepleave', function(e) {
 */
 
 function onPrevSlide() {
-    starfield.moveCameraZ(10);
+
+    if( !isFirstSlide() ) {
+        moveStarFieldBackwards();
+    } else {
+        moveStarFieldForwards();
+    }
+
 }
 
+
 function onNextSlide() {
-    starfield.moveCameraZ(-10);
+
+    if( !isLastSlide() ) {
+        moveStarFieldForwards();
+    } else {
+        moveStarFieldBackwards();
+    }
+
+}
+
+
+function moveStarFieldBackwards() {
+    starfield.moveCameraZ( -STAR_FIELD_MOVE_AMOUNT );
+}
+
+function moveStarFieldForwards() {
+    starfield.moveCameraZ( STAR_FIELD_MOVE_AMOUNT );
+}
+
+function isFirstSlide() {
+    return getSlideIndex(getCurrentSlide()) === 0;
+}
+
+function isLastSlide() {
+    return getSlideIndex(getCurrentSlide()) === numberOfSlides - 1;
+}
+
+function getCurrentSlide() {
+    return document.getElementById('impress').querySelector('.active');
+}
+
+function getSlideIndex(slide) {
+    return Array.prototype.indexOf.call( slideElements, slide );
 }
 
 /**
- * TODO also handle hash change!
+ * TODO also handle touch control, hash change etc!
  */
 document.addEventListener("keyup", function ( event ) {
     if ( event.keyCode === 9 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) ) {

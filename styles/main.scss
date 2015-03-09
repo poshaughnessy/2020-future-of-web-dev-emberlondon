@@ -118,6 +118,17 @@ h4.below {
   margin-top: 1em;
 }
 
+.long-quote {
+  font-size: 1.8em;
+  line-height: 1.2em;
+}
+
+.longer-quote,
+.longer-quote p {
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+
 /*
  * Slide specific styles
  */
@@ -132,8 +143,18 @@ h4.below {
   margin-top: 40px;
 }
 
-.long-quote {
-  font-size: 1.8em;
-  line-height: 1.2em;
+#service-workers-image {
+  width: 70%;
 }
 
+#android-recents-view-image {
+  width: 30%;
+}
+
+#urls-fading-image {
+  width: 30%;
+}
+
+#physical-web-quote {
+  margin-top: 1.5em;
+}

@@ -35,11 +35,19 @@ document.addEventListener('impress:stepleave', function(event) {
 
 function onSlideChange() {
 
-    var newSlideIndex = getSlideIndex( getCurrentSlide() );
+    var currentSlide = getCurrentSlide();
 
-    console.log('slide changed to', newSlideIndex);
+    if( currentSlide ) {
 
-    moveStarField( newSlideIndex / numberOfSlides );
+        var newSlideIndex = getSlideIndex( currentSlide );
+
+        console.log('slide changed to', newSlideIndex);
+
+        moveStarField( newSlideIndex / numberOfSlides );
+
+    } else {
+        console.warn('Unable to get current slide');
+    }
 
 }
 

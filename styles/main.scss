@@ -129,6 +129,34 @@ h4.below {
   line-height: 1.1em;
 }
 
+table {
+  margin: 1em auto;
+  background: #eee;
+  opacity: 0.9;
+
+  td, th {
+    padding: 5px 25px;
+    border: 1px solid #666;
+  }
+
+  td {
+    color: #333;
+  }
+
+  th {
+    color: #000;
+  }
+
+  thead th {
+    color: $text-colour-main-darker;
+  }
+
+  tbody th {
+    font-size: 0.9em;
+  }
+
+}
+
 /*
  * Slide specific styles
  */
@@ -155,6 +183,22 @@ h4.below {
   width: 30%;
 }
 
+#what-if-i-told-you-image {
+  width: 66%;
+}
+
+#xkcd-web-apps-image {
+  width: 26%;
+}
+
+#web-app-manifest-image {
+  width: 35%;
+}
+
 #physical-web-quote {
   margin-top: 1.5em;
+}
+
+#ecommerce-load-times-image {
+  width: 80%;
 }

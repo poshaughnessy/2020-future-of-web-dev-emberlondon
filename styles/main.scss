@@ -3,6 +3,7 @@
 
 $text-colour-main: #93b9e1; //#5c88b7; //#8dc8d9;
 $text-colour-main-shadow: rgb(78, 108, 183);
+$text-colour-main-darker: #5c88b7;
 $text-colour-alt: #ddd551;
 $default-text-size: 40px;
 
@@ -59,6 +60,23 @@ li {
   margin-bottom: 1em;
 }
 
+ul.long-horizontal {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+ul.long-horizontal li {
+  display: inline;
+  margin: 0 20px 0 0;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+ul.alternate-colours li:nth-child(even) {
+  color: $text-colour-main-darker;
+}
+
 .caption {
   font-size: 0.9em;
   margin-top: 1em;
@@ -104,4 +122,8 @@ a {
     font-size: 1.2em;
     margin-top: 1em;
   }
+}
+
+#not-in-2010-list {
+  margin-top: 40px;
 }

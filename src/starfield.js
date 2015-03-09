@@ -10,7 +10,7 @@ console.log('THREE', THREE);
 
 var Starfield = function() {
 
-    var CAMERA_Z_RANGE = 100,
+    var CAMERA_Z_RANGE = 200,
         camera,
         scene,
         renderer,

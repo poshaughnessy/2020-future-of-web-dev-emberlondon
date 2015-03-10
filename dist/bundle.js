@@ -9,6 +9,8 @@ var impressRoot = document.getElementById('impress'),
 impress().init();
 starfield.init();
 
+onSlideChange();
+
 document.addEventListener('impress:stepleave', function(event) {
 
     /*

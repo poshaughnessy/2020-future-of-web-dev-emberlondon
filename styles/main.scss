@@ -88,6 +88,10 @@ img {
   max-height: 100%;
 }
 
+img + .caption {
+  margin-top: 0.5em;
+}
+
 a {
   text-decoration: none;
   color: lighten($text-colour-main, 15%);
@@ -195,6 +199,10 @@ table {
   width: 26%;
 }
 
+#google-now-image {
+  width: 90%;
+}
+
 #web-app-manifest-image {
   width: 35%;
 }
@@ -225,5 +233,7 @@ table {
 }
 
 #modularisation-logos img {
+  margin-top: 30px;
+  margin-bottom: 10px;
   height: 200px;
 }

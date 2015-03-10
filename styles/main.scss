@@ -119,6 +119,7 @@ a {
 }
 
 h4.below {
+  font-size: 1.3em;
   margin-top: 0.5em;
 }
 
@@ -253,4 +254,21 @@ table {
 #your-fave-lang {
   font-family: "courier new", courier, monospace;
   display: block;
+}
+
+#smart-rope-image {
+  width: 90%;
+}
+
+#final-slide {
+
+  h3 {
+    margin-bottom: 1.5em;
+  }
+
+  p {
+    font-size: 1.1em;
+    margin-bottom: 0.4em;
+  }
+
 }

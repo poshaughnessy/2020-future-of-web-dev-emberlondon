@@ -119,7 +119,7 @@ a {
 }
 
 h4.below {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .quote {
@@ -236,4 +236,21 @@ table {
   margin-top: 30px;
   margin-bottom: 10px;
   height: 200px;
+}
+
+#meerkat-image {
+  width: 80%;
+}
+
+#webrtc-graph-image {
+  width: 90%;
+}
+
+#ecmascript-process-image {
+  width: 75%;
+}
+
+#your-fave-lang {
+  font-family: "courier new", courier, monospace;
+  display: block;
 }

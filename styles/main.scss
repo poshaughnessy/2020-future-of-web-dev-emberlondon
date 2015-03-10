@@ -90,7 +90,7 @@ img {
 
 a {
   text-decoration: none;
-  color: lighten($text-colour-main, 10%);
+  color: lighten($text-colour-main, 15%);
 
   &:hover {
     color: lighten($text-colour-main, 20%);
@@ -123,13 +123,13 @@ h4.below {
 }
 
 .long-quote {
-  font-size: 1.8em;
+  font-size: 1.5em;
   line-height: 1.2em;
 }
 
-.longer-quote,
+p.longer-quote,
 .longer-quote p {
-  font-size: 1.1em;
+  font-size: 1.3em;
   line-height: 1.1em;
 }
 
@@ -209,4 +209,8 @@ table {
 
 #machines-humans-quote {
   margin-top: 1.5em;
+}
+
+#pictures-under-glass-image {
+  width: 85%;
 }

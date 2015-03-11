@@ -83,6 +83,17 @@ ul.alternate-colours li:nth-child(even) {
   font-style: italic;
 }
 
+.credit {
+  color: #ccc;
+  font-size: 0.5em;
+  margin-top: 0.5em;
+  font-style: italic;
+
+  a {
+    color: #ccc;
+  }
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -120,6 +131,10 @@ a {
 
 h4.below {
   font-size: 1.3em;
+  margin-top: 0.5em;
+}
+
+h5.below {
   margin-top: 0.5em;
 }
 
@@ -180,12 +195,16 @@ table {
   margin-top: 40px;
 }
 
+#flying-car-image {
+  width: 85%;
+}
+
 #service-workers-image {
-  width: 70%;
+  width: 65%;
 }
 
 #android-recents-view-image {
-  width: 30%;
+  width: 29%;
 }
 
 #urls-fading-image {
@@ -193,7 +212,7 @@ table {
 }
 
 #what-if-i-told-you-image {
-  width: 66%;
+  width: 70%;/*66%;*/
 }
 
 #xkcd-web-apps-image {
@@ -221,7 +240,7 @@ table {
 }
 
 #pictures-under-glass-image {
-  width: 85%;
+  width: 80%;
 }
 
 #how-can-web-keep-up {
@@ -258,6 +277,14 @@ table {
 
 #smart-rope-image {
   width: 90%;
+}
+
+#octobiwan-image {
+  width: 55%;
+}
+
+#ember-clippy-image {
+  width: 70%;
 }
 
 #final-slide {

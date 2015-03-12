@@ -79,7 +79,7 @@ ul.alternate-colours li:nth-child(even) {
 }
 
 ol.contents {
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
   text-align: left;
   color: $text-colour-main-darker;
@@ -163,6 +163,8 @@ h5.below {
 
 .quote {
   line-height: 1.2em;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .long-quote {
@@ -182,7 +184,7 @@ table {
   opacity: 0.9;
 
   td, th {
-    padding: 5px 25px;
+    padding: 15px 30px;
     border: 1px solid #666;
   }
 
@@ -227,15 +229,15 @@ table {
 }
 
 #flying-car-image {
-  width: 85%;
+  width: 75%;
 }
 
 #service-workers-image {
-  width: 65%;
+  width: 60%;
 }
 
 #android-recents-view-image {
-  width: 29%;
+  width: 25%;
 }
 
 #urls-fading-image {
@@ -251,11 +253,11 @@ table {
 }
 
 #google-now-image {
-  width: 80%;
+  width: 75%;
 }
 
 #web-app-manifest-image {
-  width: 30%;
+  width: 25%;
 }
 
 #physical-web-quote {
@@ -263,11 +265,11 @@ table {
 }
 
 #ecommerce-load-times-image {
-  width: 70%;
+  width: 65%;
 }
 
 #http2-image {
-  width: 50%;
+  width: 45%;
 }
 
 #machines-humans-quote {
@@ -275,7 +277,7 @@ table {
 }
 
 #pictures-under-glass-image {
-  width: 70%;
+  width: 62%;
 }
 
 #how-can-web-keep-up {
@@ -313,7 +315,7 @@ table {
 }
 
 #ecmascript-process-image {
-  width: 65%;
+  width: 60%;
 }
 
 #your-fave-lang {
@@ -325,7 +327,7 @@ table {
 }
 
 #octobiwan-image {
-  width: 50%;
+  width: 45%;
 }
 
 #ember-clippy-image {
@@ -334,12 +336,12 @@ table {
 
 #final-slide {
 
-  h3 {
-    margin-bottom: 1.5em;
+  h2 {
+    margin-bottom: 1em;
   }
 
   p {
-    font-size: 1.1em;
+    font-size: 1.4em;
     margin-bottom: 0.4em;
   }
 

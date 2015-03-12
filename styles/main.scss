@@ -92,6 +92,10 @@ ul.alternate-colours li:nth-child(even) {
   a {
     color: #ccc;
   }
+
+  &.above-caption {
+    margin: 0;
+  }
 }
 
 img {
@@ -233,6 +237,10 @@ table {
 
 #ecommerce-load-times-image {
   width: 80%;
+}
+
+#http2-image {
+  width: 70%;
 }
 
 #machines-humans-quote {

@@ -3,6 +3,7 @@
 
 $text-colour-main: #93b9e1; //#5c88b7; //#8dc8d9;
 $text-colour-main-shadow: rgb(78, 108, 183);
+$text-colour-main-lighter: #bad3ee;
 $text-colour-main-darker: #5c88b7;
 $text-colour-alt: #ddd551;
 $default-text-size: 40px;
@@ -76,6 +77,23 @@ ul.long-horizontal li {
 ul.alternate-colours li:nth-child(even) {
   color: $text-colour-main-darker;
 }
+
+ol.contents {
+  width: 90%;
+  text-align: left;
+  color: $text-colour-main-darker;
+  font-size: 1.8em;
+
+  li {
+    margin-bottom: 0.2em;
+  }
+
+  .highlight {
+    color: $text-colour-main-lighter;
+  }
+
+}
+
 
 .caption {
   font-size: 0.8em;

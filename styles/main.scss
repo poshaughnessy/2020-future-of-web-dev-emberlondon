@@ -6,7 +6,7 @@ $text-colour-main-shadow: rgb(78, 108, 183);
 $text-colour-main-lighter: #bad3ee;
 $text-colour-main-darker: #5c88b7;
 $text-colour-alt: #ddd551;
-$default-text-size: 40px;
+$default-text-size: 45px;
 
 body {
   background: #000000;
@@ -204,6 +204,14 @@ table {
 
 }
 
+.min-width-50 {
+  min-width: 50%;
+}
+
+.max-width-70 {
+  max-width: 70%;
+}
+
 /*
  * Slide specific styles
  */
@@ -235,7 +243,7 @@ table {
 }
 
 #what-if-i-told-you-image {
-  width: 70%;/*66%;*/
+  width: 60%;
 }
 
 #xkcd-web-apps-image {
@@ -243,11 +251,11 @@ table {
 }
 
 #google-now-image {
-  width: 90%;
+  width: 80%;
 }
 
 #web-app-manifest-image {
-  width: 35%;
+  width: 30%;
 }
 
 #physical-web-quote {
@@ -255,11 +263,11 @@ table {
 }
 
 #ecommerce-load-times-image {
-  width: 80%;
+  width: 70%;
 }
 
 #http2-image {
-  width: 70%;
+  width: 50%;
 }
 
 #machines-humans-quote {
@@ -267,7 +275,7 @@ table {
 }
 
 #pictures-under-glass-image {
-  width: 80%;
+  width: 70%;
 }
 
 #how-can-web-keep-up {
@@ -282,7 +290,18 @@ table {
 #modularisation-logos img {
   margin-top: 30px;
   margin-bottom: 10px;
-  height: 200px;
+}
+
+#modularisation-logos img:nth-of-type(1) {
+  width: 25%;
+}
+
+#modularisation-logos img:nth-of-type(2) {
+  width: 23%;
+}
+
+#modularisation-logos img:nth-of-type(3) {
+  width: 18%;
 }
 
 #meerkat-image {
@@ -294,24 +313,23 @@ table {
 }
 
 #ecmascript-process-image {
-  width: 75%;
+  width: 65%;
 }
 
 #your-fave-lang {
   font-family: "courier new", courier, monospace;
-  display: block;
 }
 
 #smart-rope-image {
-  width: 90%;
+  width: 70%;
 }
 
 #octobiwan-image {
-  width: 55%;
+  width: 50%;
 }
 
 #ember-clippy-image {
-  width: 70%;
+  width: 60%;
 }
 
 #final-slide {

@@ -110,7 +110,7 @@ document.addEventListener("keyup", function ( event ) {
 }, false);
 */
 
-},{"./starfield":"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/src/starfield.js","impress":"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/bower_components/impress.js/js/impress.js"}],"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/bower_components/impress.js/js/impress.js":[function(require,module,exports){
+},{"./starfield":"/Users/peteshau/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/src/starfield.js","impress":"/Users/peteshau/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/bower_components/impress.js/js/impress.js"}],"/Users/peteshau/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/bower_components/impress.js/js/impress.js":[function(require,module,exports){
 (function (global){
 ;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
@@ -919,7 +919,7 @@ document.addEventListener("keyup", function ( event ) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/node_modules/tween.js/index.js":[function(require,module,exports){
+},{}],"/Users/peteshau/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/node_modules/tween.js/index.js":[function(require,module,exports){
 /**
  * Tween.js - Licensed under the MIT license
  * https://github.com/sole/tween.js
@@ -1677,7 +1677,7 @@ TWEEN.Interpolation = {
 };
 
 module.exports=TWEEN;
-},{}],"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/src/starfield.js":[function(require,module,exports){
+},{}],"/Users/peteshau/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/src/starfield.js":[function(require,module,exports){
 /**
  * Originally based on Seb Lee Delisle's Three.js tutorial - see LICENCE.txt.
  */
@@ -1795,7 +1795,7 @@ var Starfield = function() {
 module.exports = new Starfield();
 
 
-},{"../vendor/threejs-extras/CanvasRenderer.js":"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/vendor/threejs-extras/CanvasRenderer.js","../vendor/threejs-extras/Projector.js":"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/vendor/threejs-extras/Projector.js","tween.js":"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/node_modules/tween.js/index.js"}],"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/vendor/threejs-extras/CanvasRenderer.js":[function(require,module,exports){
+},{"../vendor/threejs-extras/CanvasRenderer.js":"/Users/peteshau/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/vendor/threejs-extras/CanvasRenderer.js","../vendor/threejs-extras/Projector.js":"/Users/peteshau/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/vendor/threejs-extras/Projector.js","tween.js":"/Users/peteshau/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/node_modules/tween.js/index.js"}],"/Users/peteshau/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/vendor/threejs-extras/CanvasRenderer.js":[function(require,module,exports){
 /**
  * @author mrdoob / http://mrdoob.com/
  */
@@ -2895,7 +2895,7 @@ THREE.CanvasRenderer = function ( parameters ) {
 
 };
 
-},{}],"/Users/peter/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/vendor/threejs-extras/Projector.js":[function(require,module,exports){
+},{}],"/Users/peteshau/dev/src/misc/presentations/2020-future-of-web-dev-emberlondon/vendor/threejs-extras/Projector.js":[function(require,module,exports){
 /**
  * @author mrdoob / http://mrdoob.com/
  * @author supereggbert / http://www.paulbrunt.co.uk/

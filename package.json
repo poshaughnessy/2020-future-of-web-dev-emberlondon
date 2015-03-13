@@ -1,6 +1,6 @@
 {
   "name": "2020-future-of-web-dev-emberlondon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A presentation I'm giving to the Ember London meetup, March 2015",
   "main": "gulpfile.js",
   "repository": {

@@ -9,12 +9,14 @@ var gulp = require('gulp'),
     express = require('express'),
     server = require('./server');
 
+/*
 gulp.task('copy-fonts', function() {
 
     gulp.src('./fonts/*')
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist/fonts/'));
 
 });
+*/
 
 gulp.task('sass', function() {
 
@@ -57,7 +59,7 @@ gulp.task('watch', ['browserify-watch'], function() {
     gulp.watch('./styles/*.scss', ['sass']);
 });
 
-gulp.task('server', ['copy-fonts','sass','watch'], function() {
+gulp.task('server', ['sass','watch'], function() {
     server.startExpress();
 });
 

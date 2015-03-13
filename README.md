@@ -1,6 +1,22 @@
 # 2020: The Future of Web Development
 
-A talk I am preparing for the [Ember London meetup](http://emberlondon.com/), March 2015
+A talk I gave at the [Ember London meetup on 12th March 2015](http://emberlondon.com/)
+
+Built with Impress.js and Three.js.
+
+Best viewed in Chrome on the desktop.
+
+## To run locally
+
+    npm install
+    bower install
+    gulp
+
+## To view online
+
+Please view on a good wifi connection, because there are lots of big images:
+
+https://future-of-web-dev-2020.herokuapp.com
 
 ## Credits
 

@@ -30,7 +30,6 @@
     "browserify": "~9.0.3",
     "browserify-shim": "~3.8.3",
     "brfs": "~1.2.0",
-    "express": "~4.10.4",
     "gulp": "~3.8.10",
     "watchify": "~2.1.1",
     "vinyl-source-stream": "~1.0.0",
@@ -43,6 +42,7 @@
     "gulp-util": "~3.0.4"
   },
   "dependencies": {
+    "express": "~4.10.4",
     "tween.js": "~0.14.0"
   }
 }

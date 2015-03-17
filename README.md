@@ -4,19 +4,28 @@ A talk I gave at the [Ember London meetup on 12th March 2015](http://emberlondon
 
 Built with Impress.js and Three.js.
 
-Best viewed in Chrome on the desktop.
-
-## To run locally
+## To run up locally
 
     npm install
     bower install
     gulp
 
-## To view online
+Best viewed in Chrome on the desktop.
+
+## To view slides online
 
 Please view on a good wifi connection, because there are lots of big images:
 
 https://future-of-web-dev-2020.herokuapp.com
+
+Best viewed in Chrome on the desktop.
+
+## Watch the talk
+
+The recording is on Vimeo:
+
+https://vimeo.com/122421169
+
 
 ## Credits
 

@@ -33,16 +33,16 @@ Thanks to everyone who responded to my [Twitter survey](https://twitter.com/posh
 * @karthikvj
 * @EeneyFay
 
-And everyone who gave me ideas in person:
+And everyone who gave me ideas in person or elsewhere:
 
 * @markuskobler
 * @kaelig
 * @pocketjoso
 * @nexii
+* @ChrisPFTNYC
 
 And thanks for the images:
 
 * DeLorean by [Terabass, Creative Commons](http://commons.wikimedia.org/wiki/File:TeamTimeCar.com-BTTF_DeLorean_Time_Machine-OtoGodfrey.com-JMortonPhoto.com-07.jpg)
 * Android L Recents View from [WonderHowTo](http://android.wonderhowto.com/inspiration/everything-you-need-know-about-android-l-kitkats-upcoming-successor-0155839/)
-* Opera Coast home screen by [Danesh Daroui, Creative Commons](http://en.wikipedia.org/wiki/File:Opera_Coast_home_screen.png)
 * Service worker figures by [geralt, CC0 Public Domain](http://pixabay.com/en/workers-figures-dolls-toys-hauling-78002/)
